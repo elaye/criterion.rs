@@ -71,7 +71,10 @@ mod plot;
 pub mod profiler;
 mod report;
 mod routine;
+#[cfg(not(feature = "unstable_pub_stats"))]
 mod stats;
+#[cfg(feature = "unstable_pub_stats")]
+pub mod stats;
 
 use std::cell::RefCell;
 use std::collections::HashSet;

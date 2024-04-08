@@ -97,6 +97,8 @@ cargo_bench_support = []
 # cargo-criterion's --message-format=json option.
 csv_output = ["csv"]
 
+unstable_pub_stats = []
+
 [workspace]
 exclude = ["cargo-criterion"]
 
